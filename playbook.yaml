@@ -13,7 +13,7 @@
          shell: apt update && apt install -y python-apt
 
        - name: Clone Git Repo
-         shell: cd /tmp && git clone https://github.com/kalwakolvenky/ansibletesting.git
+         shell: rm -rf /tmp/ansibletesting && cd /tmp && git clone https://github.com/kalwakolvenky/ansibletesting.git
 
        - name: Install Nginx Server
          apt: >
